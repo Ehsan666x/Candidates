@@ -75,7 +75,7 @@ window.onload=function(){
             let point_elements = row.querySelectorAll('.cell-input');
             for(let i=0 ; i<point_elements.length-2;i++){
                 let p = point_elements[i];
-                if(p.value == "½"){
+                if(p.value == "½" || p.value == 0.5 || p.value == "0.5"){
                     total_point += 0.5;
                 }else if(p.value){
                     total_point += parseInt(p.value);
