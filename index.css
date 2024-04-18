@@ -1,0 +1,525 @@
+
+
+*::-webkit-scrollbar {
+    background-color: #4C4C4C;
+    /* Цвет ползунка */
+    /* Скругление углов */
+    border-radius: 10px;
+
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #fab942;
+    border-radius: 10px;
+}
+*::-webkit-scrollbar:horizontal{
+    height: 4px;
+}
+@media all {
+
+    *,
+    *:before,
+    *:after {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+
+    div,
+    img,
+    table,
+    tr,
+    th,
+    td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .t-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0;
+    }
+
+    .t-container:before,
+    .t-container:after {
+        display: table;
+        content: " ";
+        width: 0;
+    }
+
+    .t-container:after {
+        clear: both;
+    }
+
+    .t-col {
+        display: inline;
+        float: left;
+        width: 100%;
+    }
+
+    .t-col_12 {
+        max-width: 1160px;
+    }
+
+    @media screen and (max-width:1200px) {
+        .t-container {
+            max-width: 960px;
+            padding: 0;
+        }
+
+        .t-col {
+            display: inline;
+            float: left;
+            width: 100%;
+        }
+
+        .t-col_12 {
+            max-width: 940px;
+        }
+    }
+
+    @media screen and (max-width:960px) {
+        .t-container {
+            max-width: 640px;
+        }
+
+        .t-col {
+            display: block;
+            float: none;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 0;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .t-col_12 {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media all {
+    .r_anim {
+        -webkit-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+    }
+
+    .r_showed {
+        opacity: 1;
+    }
+
+    .t-text {
+        font-family: 'Jost', Arial, sans-serif;
+        font-weight: 300;
+        color: #000000;
+    }
+
+    .t-text_sm {
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+    .t-title {
+        font-family: 'Macherie', Arial, sans-serif;
+        font-weight: 600;
+        color: #000000;
+    }
+
+    .t-align_left {
+        text-align: left;
+    }
+
+
+
+
+
+    @media screen and (max-width:1200px) {
+        .t-text_sm {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .t-text_sm {
+            font-size: 14px;
+            line-height: 1.45;
+        }
+    }
+
+
+
+    .t431__table,
+    .t431__tbody,
+    .t431__th,
+    .t431__td {
+        margin: 0;
+        padding: 0;
+        border: 0 solid #ccc;
+        vertical-align: baseline;
+        text-align: inherit;
+    }
+
+    .t431__table {
+        border-collapse: collapse;
+        table-layout: auto;
+    }
+
+    .t431__tbody {
+        overflow-y: auto;
+        height: inherit;
+        vertical-align: middle;
+    }
+
+    .t431__th,
+    .t431__td {
+        padding: 20px;
+        vertical-align: top;
+    }
+
+    .t431__tdscale_1 .t431__th,
+    .t431__tdscale_1 .t431__td {
+        padding: 20px;
+    }
+
+    @media screen and (max-width:960px) {
+        .t431__mobilescroll .t431__table-wrapper {
+            min-width: 960px;
+        }
+
+        .t431__table {
+            width: 100%;
+            table-layout: auto;
+        }
+
+        .t431__table>.t431__tbody,
+        .t431__table>.t431__thead {
+            display: table-row-group !important;
+        }
+
+        .t431__wrapper-for-mobile {
+            overflow-x: auto;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .t431__mobilescroll .t431__table-wrapper {
+            min-width: 640px;
+        }
+
+        .t431__td,
+        .t431__th {
+            -webkit-text-size-adjust: 100%;
+        }
+    }
+}
+
+#rec714771762 .t431 .t431__th {
+    border-width: 0px 1px 1px 1px;
+    background: #fab942;
+    border-color: #fab942;
+    color: #0d0802;
+}
+
+#rec714771762 .t431 .t431__tbody tr:nth-child(1) td {
+    border-top: 0 !important;
+}
+
+#rec714771762 .t431 .t431__td {
+    border-width: 1px 1px;
+    vertical-align: middle;
+    border-color: #4c4c4c;
+    color: #ffffff;
+}
+
+#rec714771762 .t431 .t431__oddrow {
+    background: #0d0802;
+}
+
+#rec714771762 .t431 .t431__evenrow {
+    background: #0d0802;
+}
+
+/*! CSS Used from: Embedded */
+#rec714771762 .t431 .t431__th {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Jost';
+}
+
+#rec714771762 .t431 .t431__td {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+    font-family: 'Jost';
+}
+
+/*! CSS Used from: Embedded */
+.t431__oddrow .t431__td:first-child {
+    border-right-color: transparent !important;
+}
+
+.t431__evenrow .t431__td:first-child {
+    border-right-color: transparent !important;
+}
+
+.t431__td {
+    position: relative;
+    overflow: hidden;
+    min-width: 65px;
+    padding: 10px !important;
+}
+
+.t431__td div {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.t431__td .white {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-color: #4C4C4C;
+    clip-path: polygon(0% 100%, 0% 0%, 100% 100%);
+}
+
+.t431__td .black {
+    padding: 15px;
+    bottom: 0;
+    right: 0;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.t431 .t-container {
+    max-width: 1240px;
+}
+
+.t431__table {
+    min-width: 1200px;
+}
+
+.t431__td img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.t-col_12 {
+    max-width: 1200px;
+}
+
+.t431__td:first-child {
+    padding-left: 20px !important;
+}
+
+.cell-input {
+    padding: 0;
+    opacity: 1;
+    text-align: center;
+    z-index: 1;
+    width: 30px;
+    background-color: #4C4C4C;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+    font-family: 'Jost';
+}
+
+.round_2 {
+    background-color: #0D0802;
+}
+.result-input {
+    width: 50px;
+    background-color: #0D0802;
+    text-align: center;
+}
+
+.btnSubmit {
+    margin-top: 20px;
+    background-color: #fab942;
+    border: 0;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Jost';
+}
+
+
+@media screen and (max-width:640px) {
+    .outer {
+        position: relative
+    }
+
+    .inner {
+        overflow-x: scroll;
+        overflow-y: visible;
+        margin-left: 100px;
+    }
+
+    .thead {
+        position: absolute;
+        z-index: 3;
+        background-color: #0A0A0A;
+        left: 0;
+
+    }
+
+    .t-text {
+        height: 70px;
+    }
+
+    .player-name {
+    }
+    .t431__table {
+        min-width: 964px;
+    }
+    .mobile-thead {
+
+    }
+    .cell-input {
+        font-size: 16px;
+    }
+    .t-title {
+        font-size: 16px;
+    }
+    .t431__td:first-child {
+        padding-left: 23px !important;
+    }
+    .t-col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width:1400px) {
+    #b1 {
+        width: 95%;
+    }
+    @media screen and (max-width:1400px) {
+        #b1 {
+            width: 95%;
+        }
+    }
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oDd4iYl.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73ord4iYl.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oDd4iYl.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73ord4iYl.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oDd4iYl.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73ord4iYl.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oDd4iYl.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73ord4iYl.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+        font-family: 'Macherie';
+        src: url('https://static.tildacdn.com/tild3231-3766-4431-b731-646265336439/macherie.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .styles{
+        background-color: rgb(62, 102, 43);
+    }
+}
