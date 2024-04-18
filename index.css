@@ -1,4 +1,11 @@
-
+#top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 1%;
+    background-color: #fab942;
+}
 
 *::-webkit-scrollbar {
     background-color: #4C4C4C;
@@ -522,4 +529,6 @@
     .styles{
         background-color: rgb(62, 102, 43);
     }
+
+
 }
