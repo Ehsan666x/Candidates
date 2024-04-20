@@ -28,7 +28,6 @@ window.onload=function(){
     
     for(let round of rounds){
         for(let obj of round){
-            tbl.children[obj[0]].children[obj[1]+2].children[obj[2]].firstElementChild.removeAttribute("disabled");
             tbl.children[obj[0]].children[obj[1]+2].children[obj[2]].firstElementChild.value = obj[3]
         }
         calculate_points();
