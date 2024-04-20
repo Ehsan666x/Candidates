@@ -1,11 +1,38 @@
+
+
 window.onload=function(){
     const cells = document.querySelectorAll('.cell-input');
-    const table = document.querySelector('.t431__tbody');
-    const table_childs = table.children;
+
+    const tbl = document.querySelector('.t431__tbody');
+    const tbl_childs = tbl.children;
     
     const points = [0,1,0.5,"0","1","0.5"];
     const opoonent_point = [1,0,0.5,"1","0","0.5"];
     const newgames = [];
+
+    // completed rounds
+    const rounds = [
+        // row , opponent ,color ,result
+        [
+            //round 12
+            [0,4,0,1],
+            [1,3,0,0],
+            [2,7,1,0],
+            [3,1,1,1],
+            [4,0,1,0],
+            [5,6,1,0.5],
+            [6,5,0,0.5],
+            [7,2,0,1],
+        ],
+    ]
+    
+    for(let round of rounds){
+        for(let obj of round){
+            tbl.children[obj[0]].children[obj[1]+2].children[obj[2]].firstElementChild.removeAttribute("disabled");
+            tbl.children[obj[0]].children[obj[1]+2].children[obj[2]].firstElementChild.value = obj[3]
+        }
+        calculate_points();
+    }
 
     for(let c of cells){
         if(!c.value){
@@ -40,8 +67,8 @@ window.onload=function(){
         let color = c.parentElement.className;
         let row_element = c.parentElement.parentElement.parentElement;
         let row_index;
-        for(let i = 0 ; i<table_childs.length; i++){
-            if( table_childs[i] == row_element){
+        for(let i = 0 ; i<tbl_childs.length; i++){
+            if( tbl_childs[i] == row_element){
                 row_index = i;
             }
         }
@@ -54,7 +81,7 @@ window.onload=function(){
             }
         }
         
-        let opponent = table_childs[column_index].children[2+row_index].querySelector(`.${color == "white" ? "black" : "white"}`).firstElementChild;
+        let opponent = tbl_childs[column_index].children[2+row_index].querySelector(`.${color == "white" ? "black" : "white"}`).firstElementChild;
 
         if([".","0.","5"].includes(c.value)){
             opponent.value = c.value;
@@ -70,7 +97,7 @@ window.onload=function(){
 
     function calculate_points(){
         let ranks = [];
-        for(let row of table_childs){
+        for(let row of tbl_childs){
             let total_point = 0;
             let point_elements = row.querySelectorAll('.cell-input');
             for(let i=0 ; i<point_elements.length-2;i++){
